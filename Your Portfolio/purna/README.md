@@ -1,5 +1,7 @@
 # My Portfolio
 
+![image](https://github.com/DecodersCommunity/portfolio_maker/assets/107195487/0b571435-d43f-45c4-a554-cea7d8703a0e)
+
 Welcome to my portfolio repository! This is where I showcase my work, skills, and projects. Feel free to explore and get to know me better.
 
 ## About My Portfolio
