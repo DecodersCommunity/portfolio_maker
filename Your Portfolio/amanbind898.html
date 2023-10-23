@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Builder</title>
+        <link rel="icon" href="" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <style>
+
+
+body {
+  font-family: 'Bellota', cursive;
+  font-size: 26pt;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 15pt;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 0 18px 0;
+  margin: 0 0 10px 0;
+}
+
+h1 span {
+  border: 8px solid #666666;
+  border-radius: 8px;
+  background-image: url("https://wallpapercave.com/wp/wp2757874.gif");
+  padding: 12px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}
+
+.img-circle {
+  border: 8px solid white;
+  border-radius: 50%;
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+#header {
+  background-image: url("https://wallpapercave.com/wp/wp2757874.gif");
+  background-size: cover;
+}
+
+#header img {
+  display: block;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+}
+
+#header p {
+  font-size: 60pt;
+  color: #ffffff;
+  padding-top: 8px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quote {
+  font-size: 12pt;
+  text-align: right;
+  margin-top: 10px;
+  color: grey;
+}
+
+#res {
+  text-align: center;
+  margin: 50px auto;
+}
+
+#res a {
+  margin: 20px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.selected {
+  background-color: #f36f48;
+  font-weight: bold;
+  color: white;
+}
+
+li {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+progress {
+  width: 70%;
+  height: 20px;
+  color: white;
+  background: #efefef;
+}
+
+progress::-webkit-progress-bar {
+  background: #efefef;
+}
+
+progress::-webkit-progress-value {
+  background: #C185EF;
+}
+
+progress::-moz-progress-bar {
+  color: #C185EF;
+  background: #efefef;
+}
+
+iframe,
+audio {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #3fb6b2;
+  border-radius: 10px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #f36f48;
+}
+
+input {
+  text-align: center;
+  font-size: 25pt;
+  border: none;
+  border-radius: 12px;
+  padding: 30px 8%;
+  margin: 20px 5px 10px 5px;
+  background-color: #d7d7d7;
+}
+
+input:focus {
+  background-color: #2f2f2f;
+  color: white;
+}
+
+form {
+  text-align: center;
+  font-size: 30pt;
+  font-family: Helvetica;
+  font-weight: 500;
+  margin: 10% 15% 8% 15%;
+  border-radius: 12px;
+}
+
+#insta-image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #d7d7d7;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: -75px;
+}
+
+#contacts img {
+  height: 150px;
+  width: 150px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#contacts a {
+  text-decoration: none;
+}
+
+#contacts img:hover {
+  opacity: 0.8;
+}
+
+#contacts {
+  text-align: center;
+}
+
+
+    </style>
+    <body>
+        <div id="header" class="section">
+<!--           YOUR IMAGE -->
+            <img alt="logo" class="img-circle" src="" placeholder =" Your pic" > 
+            <p>Aman Bind</p>
+        </div>
+        <div class="section">
+            <h1><span>About Me</span></h1>
+<!--           ADD ABOUT YOURSELF, make it centre align -->
+            <p> 
+              <strong>
+    Hello! I'm a passionate second-year student at IIIT Bhagalpur, deeply engrossed in the world of technology and innovation. My journey in the realm of programming began with a keen interest in web development and coding. I find immense joy in crafting interactive and visually appealing websites, pushing the boundaries of what the web can do.
+
+Currently, my focus lies on honing my skills in web development, where I am exploring various programming languages, frameworks, and design principles. I believe in the power of coding to create solutions that can change the way we interact with the digital world. Every line of code I write is a step towards making a difference.
+
+Feel free to connect with me if you share my passion for web development, coding, or tech in general. Let's collaborate, learn, and create together in this exciting digital landscape!
+              </strong>  
+            </p>
+          
+           
+        </div>
+        
+          
+        <div class="section">
+            <h1><span>My Skills</span></h1>
+            <ul>
+<!--               add/remove your skills , and set value accordingly -->
+                <li>Academics<br /> <progress min="0" max="100" value="80"></progress> </li>
+                <li>Web Development <br /> <progress min="0" max="100" value="75"></progress> </li>
+                <li>Data Structures and Algorithm<br /> <progress min="0" max="100" value="60"></progress> </li>
+                <li>coding<br /> <progress min="0" max="100" value="90"></progress> </li>
+                <li>C++<br /> <progress min="0" max="100" value="90"></progress> </li>
+            </ul>
+        </div>
+        <div class="section" id="contacts">
+            <h1><span>My Profiles</span></h1>
+<!--           ADD links in href tag , you can add more profiles and add icon (take Google's help) -->
+            <div>
+          
+                <!-- LINKED IN -->
+                <a href="https://www.linkedin.com/in/amanbind/" target="_blank">
+                <img alt="Linkedin" src="https://img.icons8.com/nolan/512/linkedin.png"/>
+                </a>
+
+<!--               LEETCODE -->
+                <a href=" ">
+                <img alt="LeetCode" src="https://img.icons8.com/external-tal-revivo-fresh-tal-revivo/56/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-fresh-tal-revivo.png" />
+                </a>
+
+<!--               GITHUB -->
+                <a href="https://github.com/amanbind898">
+                <img alt="GitHub" src="https://img.icons8.com/nolan/144/github.png"/>
+                </a>
+               
+<!--                CODEFORCES -->
+                <a href="">
+                <img alt="codeforces" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-codeforces-programming-competitions-and-contests-programming-community-logo-color-tal-revivo.png"/>
+                </a>
+
+              
+            </div>
+        </div>
+        <div class="section" id="contacts">
+          <h1><span>Contact Me</span></h1>
+<!--           just update your email , you can also add whatsApp in contact Me section , think how can you do this. -->
+<!--           GMAIL -->
+          <a href="tickytech914@gmail.com">
+            <img src="https://img.icons8.com/fluent/95/000000/gmail--v2.png"/>
+          </a>
+          <!-- WHATSAPP -->
+          <a href="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" alt="whatsapp">
+          </a>
+        </div>
+     
+      <center>Feel Free to Reach me</center>
+          
+   
+        <script type="text/javascript">
+            function search() {
+                window.open('https://www.google.com/search?output=search&q=' + document.getElementById("question").value)
+            }
+        </script>
+    </body>
+</html>
